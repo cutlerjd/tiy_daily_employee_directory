@@ -22,7 +22,11 @@
     <div class="right section"><p>{{university}}</p></div>
     {{/university}}
     <div class="left header"><p>Skills</p></div>
-    <div class="right section"><p>PetroChemical</p><p>C++</p><p>ASP.NET</p></div>
+    <div class="right section">
+      {{#skills}}
+      <p>{{.}}</p>
+      {{/skills}}
+    </div>
   </div>
 </body>
 </html>
