@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Directory</title>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <div class="userList">
+        {{#users}}
+        <div class="user">
+            <a href="/user/{{username}}">
+            <img src="{{avatar}}" />
+            <h2>{{name}}</h2>
+            {{#job}}
+            <span class="job">{{job}}, {{company}}</span> 
+            {{/job}} 
+            {{^job}}
+            <span class="noJob">Looking for work</span> 
+            {{/job}}
+            </a>
+        </div>
+        {{/users}}
+    </div>
+</body>
+
+</html>

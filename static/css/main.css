@@ -1,0 +1,35 @@
+html {box-sizing:border-box;}
+*, *:before, *:after {box-sizing:inherit;}
+
+
+.userList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.user {
+  border: 1px solid gray;
+  display: inline;
+  width: 300px;
+  padding: 10px;
+  margin: 20px;
+}
+.user h2 {
+  color: lightblue;
+}
+.job span {
+  font-style: italic; 
+  color: black;
+}
+.noJob span {
+  font-style: italic; 
+  color: red;
+}
+.user img {
+  margin: 20px 65px;
+  padding: auto;
+}
+.user a {
+  text-decoration: none;
+}
