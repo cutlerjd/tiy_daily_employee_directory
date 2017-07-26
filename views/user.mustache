@@ -2,10 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="/css/main.css" />
   <title>{{name}}</title>
-  <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
-  <h1>Hello, Welcome {{username}}</h1>
+  <div class="wrapper">
+    <div class="left image"><img src="{{avatar}}" /></div>
+    <div class="right title"><h1>{{name}}</h1>
+    <p>
+      {{#address.city}}
+      {{address.city}}, {{address.country}}
+      {{address.city}}
+      {{/address.city}}
+      {{^address.city}}
+      {{address.country}}
+      {{/address.city}} | {{job}} <br>{{email}} | {{phone}}</p></div>
+    {{#university}}
+    <div class="left header"><p>Education</p></div>
+    <div class="right section"><p>{{university}}</p></div>
+    {{/university}}
+    <div class="left header"><p>Skills</p></div>
+    <div class="right section"><p>PetroChemical</p><p>C++</p><p>ASP.NET</p></div>
+  </div>
 </body>
 </html>

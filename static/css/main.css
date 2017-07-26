@@ -33,3 +33,28 @@ html {box-sizing:border-box;}
 .user a {
   text-decoration: none;
 }
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 1000px;
+}
+.left {
+  width: 300px;
+  text-align: right;
+  padding:10px;
+}
+.right {
+  width: 600px;
+  text-align: left;
+  padding: 10px;
+}
+.image img {
+  border-radius: 50%;
+  border: 1px solid gray;
+}
+.left p {
+  font-style: bold;
+  font-size: 1.1em;
+  font-family: sans-serif;
+}
